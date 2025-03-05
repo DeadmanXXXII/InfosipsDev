@@ -6,6 +6,7 @@ Use responsibly and report vulnerabilities to affected vendors.
 ## Installation
 ```bash
 pip install infosips
+```
 
 Yes, you can modify the script to request information from each stage dynamically. Instead of sending one request with a wildcard path, the script will iterate through each possible structure and send multiple requests, capturing responses from every stage.
 
